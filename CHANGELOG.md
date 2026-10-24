@@ -111,6 +111,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   of compounding the leads, which fetched times far past the largest lead.
 - `DataArrayPathList` keeps size one dimensions when it loads the files, so files with a
   single variable or a single time no longer fail with a dimension mismatch.
+- `NetCDF4Backend` accepts lead times in milliseconds, microseconds and nanoseconds
+  instead of raising a `KeyError` on the unit.
 
 ### Security
 

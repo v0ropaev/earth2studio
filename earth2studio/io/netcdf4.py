@@ -34,6 +34,9 @@ units_map = {
     "s": "seconds",
     "m": "minutes",
     "Y": "years",
+    "ms": "milliseconds",
+    "us": "microseconds",
+    "ns": "nanoseconds",
 }
 rev_units_map = {v: k for k, v in units_map.items()}
 

@@ -61,6 +61,8 @@ def test_netcdf4_write_is_visible_before_close(tmp_path: Path) -> None:
     [
         np.array([np.timedelta64(0, "h")]),
         np.array([np.timedelta64(-6, "h"), np.timedelta64(0, "h")]),
+        np.array([0, 6], dtype="timedelta64[h]").astype("timedelta64[us]"),
+        np.array([0, 6], dtype="timedelta64[h]").astype("timedelta64[ns]"),
     ],
 )
 @pytest.mark.parametrize(
